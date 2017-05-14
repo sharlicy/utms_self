@@ -100,7 +100,8 @@ h2,h3,h4{
  js 代码
 ============================================================ */
 .section{
-  height: 500px;
+  height: 498px;
+  min-height: 260px;
 }
 
 @media (max-width: 991px) {
@@ -294,12 +295,11 @@ h2,h3,h4{
 
 
 input{
-    width: 84%;
     color: #333;
     position: relative;
     z-index: 2;
     pointer-events: auto;
-    width: 94%;
+    width: 100%;
     float: left;
     box-sizing: border-box;
     background: white;
@@ -357,4 +357,51 @@ input{
 
 }
 
+  /* =============================================================
+  btn
+============================================================ */
+.btn-primary-order {
+    width: 35%;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+
+.dropdown-toggle {
+    border: 0px !important;
+    box-shadow: inset 0 0px 0px rgba(0, 0, 0, .075) !important;
+    padding-left: 5px;
+    -webkit-box-shadow: inset 0px rgba(0, 0, 0, .075);
+    height: 38px;
+}
+
+.div-white-shadow{
+    width: 100%;
+    height: 38px;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background: white;
+    margin: 10px;
+    padding: 0px;
+    box-shadow: 1px 2px 1px rgba(0,0,0,.15);
+    font-size: 16px;
+    color:#6f6f73;
+}
+
+
+
+.div-white-shadow > input,.dropdown-toggle{
+  border: 0px !important;
+  box-shadow: inset 0 0px 0px rgba(0, 0, 0, .075) !important;
+  -webkit-box-shadow:inset 0px rgba(0, 0, 0, .075);
+}
+.div-white-shadow >input {
+  margin: 0px !important;
+  padding: 0px !important;
+  width: 100%;
+}
+
+button.div-white-shadow:hover {
+    background-color: #e2e1e2;
+}
 
